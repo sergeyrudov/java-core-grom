@@ -1,6 +1,5 @@
 package lesson8.ads;
 
-import lesson6.Car;
 
 public class CarAd extends Ad {
     int yearOfManufacturing;

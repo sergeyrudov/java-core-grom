@@ -8,12 +8,11 @@ public class Demo {
 
     }
     static void createHighestParent(){
-        Student[] student = new Student[3];
+        Student[] student = new Student[1];
+        CollegeStudent[] collegeStudents = new CollegeStudent[1];
+        SpecialStudent[] specialStudents = new SpecialStudent[1];
         student[1] = new Student("Ivan", "Ivanov", 472,null,23);
-        student[2] = new Student("Petr", "Petrov", 472,null,21);
-        Course[] course = new Course[3];
-        course[1] = new Course(new Date(), "TeacherName", 2, "TeacherLastName", student );
-        SpecialStudent[] specialStudents = new SpecialStudent[3];
-        specialStudents[1] = new SpecialStudent("SpecialName", "SpecialLastname", 295, course, 24, 23423423,"123@mail.com");
+        collegeStudents[1] = new CollegeStudent("CollegeStudent", "StdLastname", 233, null, 56);
+        specialStudents[1] = new SpecialStudent("SpecialName", "SpecialLastname", 295, null, 24, 23423423,"123@mail.com");
     }
 }

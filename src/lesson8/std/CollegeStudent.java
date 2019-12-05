@@ -5,20 +5,15 @@ public class CollegeStudent extends Student {
     int rating;
     long id;
 
-    public CollegeStudent(String firstName, String lastName, int group, Course[] coursesTaken, int age, String collegeName, int rating, long id) {
-        super(firstName, lastName, group, coursesTaken, age);
+    public CollegeStudent(String firstName, String lastName, int group, Course[] coursesTaken) {
+        super(firstName, lastName, group, coursesTaken);
+    }
+
+    public CollegeStudent(String firstName, String lastName, int group, Course[] coursesTaken, String collegeName, int rating, long id) {
+        super(firstName, lastName, group, coursesTaken);
         this.collegeName = collegeName;
         this.rating = rating;
         this.id = id;
     }
-    public CollegeStudent(String firstName, String lastName, int group, Course[] coursesTaken, int age) {
-        super(firstName, lastName, group, coursesTaken, age);
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.group = group;
-        this.coursesTaken = coursesTaken;
-        this.age = age;
-    }
-
 }
 

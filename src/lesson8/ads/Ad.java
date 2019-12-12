@@ -2,6 +2,7 @@ package lesson8.ads;
 
 import java.util.Date;
 
+
 public class Ad extends BaseEntity{
     int price;
     Date dateCreated;
@@ -13,6 +14,6 @@ public class Ad extends BaseEntity{
     }
 
     void publishAd(){
-        //logic
+
     }
 }

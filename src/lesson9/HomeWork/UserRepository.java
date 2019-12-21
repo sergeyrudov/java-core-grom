@@ -1,7 +1,7 @@
 package lesson9.HomeWork;
 
 public class UserRepository {
-    private User[] users;
+    public User[] users;
 
     public UserRepository(User[] users) {
         this.users = users;
@@ -124,7 +124,7 @@ public class UserRepository {
         return null;
     }
 
-    private User findById(long id) {
+    public User findById(long id) {
 
         if (users != null) {
             int aa = 0;

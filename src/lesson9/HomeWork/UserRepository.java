@@ -124,7 +124,7 @@ public class UserRepository {
         return null;
     }
 
-    public User findById(long id) {
+    private User findById(long id) {
 
         if (users != null) {
             int aa = 0;

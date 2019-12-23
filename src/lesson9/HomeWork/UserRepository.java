@@ -127,7 +127,7 @@ public class UserRepository {
     public User findById(long id) {
 
         if (users != null) {
-            int aa = 0;
+            int count = 0;
             for (User user1 : users) {
                 if (user1 != null)
                     if (user1.getId() == id)

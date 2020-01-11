@@ -2,7 +2,7 @@ package lesson10.abstractbigexample;
 
 public class BankAccount {
     private Employee employee;
-    private  int balance;
+    private int balance;
 
     public BankAccount(Employee employee, int balance) {
         this.employee = employee;

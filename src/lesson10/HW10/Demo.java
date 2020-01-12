@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Demo {
     public static void main(String[] args) {
-        Customer customer = new Customer("Кирил", "Киев", "Мужской");
+        Customer customer = new Customer("Vasya Pupkin", "Киев", "Мужской");
 
         ElectronicsOrder e1 = new ElectronicsOrder("TV", new Date(), "Киев", "Одесса", 12000, customer, 24);
         ElectronicsOrder e2 = new ElectronicsOrder("AudioSet", new Date(), "Киев", "Львов", 500, customer, 6);

@@ -2,10 +2,10 @@ package lesson10.HW10;
 
 import java.util.Date;
 
-public class ElectronicOrder extends Order {
+public class ElectronicsOrder extends Order {
     private int guaranteeMonths;
 
-    public ElectronicOrder(String itemName, Date dateCreated, String shipFromCity, String shipToCity, int basePrice, Customer customerOwned, int guaranteeMonths) {
+    public ElectronicsOrder(String itemName, Date dateCreated, String shipFromCity, String shipToCity, int basePrice, Customer customerOwned, int guaranteeMonths) {
         super(itemName, dateCreated, shipFromCity, shipToCity, basePrice, customerOwned);
         this.guaranteeMonths = guaranteeMonths;
     }

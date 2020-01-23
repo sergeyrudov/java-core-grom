@@ -9,7 +9,7 @@ public class BookingComAPI implements API {
 
     @Override
     public Room[] findRooms(int price, int persons, String city, String hotel) {
-        Room[] getRooms = getAllRooms();
+        Room[] getRooms = getAll();
         int i = 0;
         for (Room room : getRooms) {
             if (room.getHotelName() == hotel && room.getCityName() == city && room.getPersons() == persons) {
@@ -35,7 +35,7 @@ public class BookingComAPI implements API {
     }
 
     @Override
-    public Room[] getAllRooms() {
+    public Room[] getAll() {
         int i = 0;
         for (Room room : rooms) {
             if (room != null)

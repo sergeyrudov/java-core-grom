@@ -27,8 +27,8 @@ public class Controller {
 
     public Room[] check(API api1, API api2) {
 
-        Room[] roomsApi1 = api1.getAllRooms();
-        Room[] roomsApi2 = api2.getAllRooms();
+        Room[] roomsApi1 = api1.getAll();
+        Room[] roomsApi2 = api2.getAll();
 
         int count = 0;
         for (Room roomApi1 : roomsApi1) {

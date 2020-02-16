@@ -9,8 +9,18 @@ public class Demo {
         System.out.println(Arrays.toString(userRepository.getUsers()));
 
         User user = new User(1001, "Ann", "1w21212");
+
         userRepository.save(user);
+
         System.out.println(Arrays.toString(userRepository.getUsers()));
+
+        System.out.println(Arrays.toString(userRepository.getUsers()));
+
+        //сохранить юзера
+        //сохранить того же юзера
+        //когда нет места в массиве
+        //когда сохраняют null
+
 
     }
 }

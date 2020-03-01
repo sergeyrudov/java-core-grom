@@ -2,7 +2,7 @@ package lesson15.hw2;
 
 import java.util.Arrays;
 
-class GoogleAPI implements API {
+public class GoogleAPI implements API {
 
     private Room[] rooms;
 

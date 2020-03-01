@@ -1,6 +1,6 @@
 package lesson15.hw2;
 
-class TripAdvisorAPI implements API {
+public class TripAdvisorAPI implements API {
 
     private Room[] rooms;
 

@@ -1,6 +1,6 @@
 package lesson15.hw2;
 
-class BookingComAPI implements API {
+public class BookingComAPI implements API {
 
     private Room[] rooms;
 
@@ -31,7 +31,6 @@ class BookingComAPI implements API {
                 }
             }
         }
-
         return roomsFound;
     }
 

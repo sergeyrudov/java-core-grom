@@ -2,11 +2,11 @@ package lesson15.hw2;
 
 import java.util.Arrays;
 
-public class GoogleApi implements API {
+class GoogleAPI implements API {
 
     private Room[] rooms;
 
-    public GoogleApi(Room[] rooms) {
+    public GoogleAPI(Room[] rooms) {
         this.rooms = rooms;
     }
 
@@ -15,9 +15,7 @@ public class GoogleApi implements API {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        GoogleApi googleAPI = (GoogleApi) o;
-
-        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        GoogleAPI googleAPI = (GoogleAPI) o;
         return Arrays.equals(rooms, googleAPI.rooms);
     }
 

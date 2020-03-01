@@ -1,10 +1,10 @@
 package lesson15.hw2;
 
-public class TripAdvisorApi implements API {
+class TripAdvisorAPI implements API {
 
     private Room[] rooms;
 
-    public TripAdvisorApi(Room[] rooms) {
+    public TripAdvisorAPI(Room[] rooms) {
         this.rooms = rooms;
     }
 

@@ -1,10 +1,10 @@
 package lesson15.hw2;
 
-public class BookingComApi implements API {
+class BookingComAPI implements API {
 
     private Room[] rooms;
 
-    public BookingComApi(Room[] rooms) {
+    public BookingComAPI(Room[] rooms) {
         this.rooms = rooms;
     }
 

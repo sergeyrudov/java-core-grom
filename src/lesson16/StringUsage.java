@@ -1,5 +1,3 @@
-package lesson16;
-
 public class StringUsage {
     public static void main(String[] args) {
 
@@ -7,6 +5,7 @@ public class StringUsage {
         String result = test + "_end";
 
         System.out.println(result);
+
         char charVariable = 't';
         char charVariable1 = 'o';
 
@@ -17,8 +16,5 @@ public class StringUsage {
 
         String test2 = new String("hello there");
         System.out.println(test2);
-
-
-
     }
 }

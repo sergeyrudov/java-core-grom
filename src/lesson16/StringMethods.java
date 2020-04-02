@@ -1,3 +1,5 @@
+package lesson16;
+
 import java.util.Arrays;
 
 public class StringMethods {
@@ -18,12 +20,13 @@ public class StringMethods {
 
         System.out.println(test.replaceAll("me", "T"));
 
+        //String regex = "{a-Z}";
 
         System.out.println(test);
         System.out.println(test.contains("mes"));
 
         System.out.println(test);
-        String phrase = "Hello there guys";
+        String phrase = "hello there guys";
         System.out.println(Arrays.toString(phrase.split(" ")));
 
         System.out.println(" test a".trim());
@@ -33,9 +36,5 @@ public class StringMethods {
 
         System.out.println(test.toUpperCase());
         System.out.println(test.toLowerCase());
-
-        test.getBytes();
-        test.equals("eeee");
-        test.intern();
     }
 }

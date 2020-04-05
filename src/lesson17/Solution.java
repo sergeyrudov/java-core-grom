@@ -3,7 +3,9 @@ package lesson17;
 public class Solution {
     public static void main(String[] args) {
         String test = "helloworld, hello, world, test";
+        String url = "https://google.com";
         System.out.println(countWords(test));
+        System.out.println(validate(url));
         System.out.println(maxWord(test));
         System.out.println(minWord(test));
         System.out.println(mostCountedWord(test));
@@ -110,6 +112,40 @@ public class Solution {
 
         for (char c : chars) {
             if (!Character.isLetter(c)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static boolean validate(String address) {
+        if (!address.startsWith("http://") && !address.startsWith("https://"))
+            return false;
+
+        if (!address.endsWith(".net") && !address.endsWith(".com") && !address.endsWith(".org"))
+            return false;
+
+        address = isValid(address, new String[]{"http://", "https://"});
+        address = address != null && address.startsWith("www.") ? address.replaceFirst("www.", "") : address;
+        address = isValid(address, new String[]{".net", ".com", "org"});
+
+        return address != null && address.length() > 0 && checkLetterOrNumber(address);
+    }
+
+    private static String isValid(String address, String[] parts) {
+        for (String part : parts) {
+            if (address.contains(part)) {
+                address = address.replaceFirst(part, "");
+                return address;
+            }
+        }
+        return null;
+    }
+
+    private static boolean checkLetterOrNumber(String name) {
+        char[] chars = name.toCharArray();
+
+        for (char c : chars) {
+            if (!Character.isLetter(c) && !Character.isDigit(c)) {
                 return false;
             }
         }
